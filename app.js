@@ -4,11 +4,12 @@ const port = 8080;
 const mongoose = require("mongoose");
 const Listing= require("./models/listings.js");
 const path=require("path");
-
+const methodOverride=require("method-override");
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
 app.use(express.urlencoded({extended: true}));
+app.use(methodOverride("_method"));
 
 const mongo_url = "mongodb://127.0.0.1:27017/wanderlust";
 main().then(() => {
@@ -41,8 +42,30 @@ app.get("/Listings/:id",async(req,res)=>{
     const listing= await Listing.findById(id);
     res.render("Listings/show.ejs",{Listing: listing});
 });
+app.post("/Listings",async(req,res)=>{
+    // let {title,description, image, price, location, country}=req.body;
+    const newListing=new Listing(req.body.Listing);
+    await newListing.save();
+    res.redirect("/Listings");
+});
 
+app.get("/Listings/:id/edit",async(req,res)=>{
+     let {id}=req.params;
+    const listing= await Listing.findById(id);
+    res.render("Listings/edit.ejs",{Listing: listing});
+});
 
+app.put("/Listings/:id",async(req,res)=>{
+    const {id}=req.params;
+    await Listing.findByIdAndUpdate(id,{...req.body.Listing});
+    res.redirect(`/Listings/${id}`);
+});
+
+app.delete("/Listings/:id",async(req,res)=>{
+    let {id}=req.params;
+    await Listing.findByIdAndDelete(id);
+    res.redirect("/Listings");
+});
 
 // app.get("/testlisting",async(req,res)=>{
 //     let sampleListing=new Listing({
