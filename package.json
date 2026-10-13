@@ -1,0 +1,24 @@
+{
+  "name": "wanderlust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drishtishah24/Wanderlust.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/drishtishah24/Wanderlust/issues"
+  },
+  "homepage": "https://github.com/drishtishah24/Wanderlust#readme",
+  "dependencies": {
+    "ejs": "^7.0.1",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.2"
+  }
+}
