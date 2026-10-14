@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust</title>
-</head>
-<body>
+<% layout("layouts/boilerplate") %>
     <h1>All Listings</h1>
     <form method="GET" action="/Listings/new">
         <button>Create New</button>
@@ -15,6 +8,4 @@
     <li><a href="/Listings/<%=Listing.id%>"><%= Listing.title %> </a> </li>
 <% } %>
 </ul>
-</body>
-</html>
 
