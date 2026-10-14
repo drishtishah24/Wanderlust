@@ -36,7 +36,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Historic Villa in Tuscany",
+    title: "Historic Villa",
     description:
       "Experience the charm of Tuscany in this beautifully restored villa. Explore the rolling hills and vineyards.",
     image: {
@@ -108,7 +108,7 @@ const sampleListings = [
     country: "Switzerland",
   },
   {
-    title: "Safari Lodge in the Serengeti",
+    title: "Safari Lodge",
     description:
       "Experience the thrill of the wild in a comfortable safari lodge. Witness the Great Migration up close.",
     image: {
@@ -144,7 +144,7 @@ const sampleListings = [
     country: "Fiji",
   },
   {
-    title: "Charming Cottage in the Cotswolds",
+    title: "Charming Cottage",
     description:
       "Escape to the picturesque Cotswolds in this quaint and charming cottage with a thatched roof.",
     image: {
@@ -156,7 +156,7 @@ const sampleListings = [
     country: "United Kingdom",
   },
   {
-    title: "Historic Brownstone in Boston",
+    title: "Historic Brownstone",
     description:
       "Step back in time in this elegant historic brownstone located in the heart of Boston.",
     image: {
@@ -168,7 +168,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Beachfront Bungalow in Bali",
+    title: "Beachfront Bungalow",
     description:
       "Relax on the sandy shores of Bali in this beautiful beachfront bungalow with a private pool.",
     image: {
@@ -180,7 +180,7 @@ const sampleListings = [
     country: "Indonesia",
   },
   {
-    title: "Mountain View Cabin in Banff",
+    title: "Mountain View Cabin",
     description:
       "Enjoy breathtaking mountain views from this cozy cabin in the Canadian Rockies.",
     image: {
@@ -192,7 +192,7 @@ const sampleListings = [
     country: "Canada",
   },
   {
-    title: "Art Deco Apartment in Miami",
+    title: "Art Deco Apartment",
     description:
       "Step into the glamour of the 1920s in this stylish Art Deco apartment in South Beach.",
     image: {
@@ -204,7 +204,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Tropical Villa in Phuket",
+    title: "Tropical Villa",
     description:
       "Escape to a tropical paradise in this luxurious villa with a private infinity pool in Phuket.",
     image: {
@@ -216,7 +216,7 @@ const sampleListings = [
     country: "Thailand",
   },
   {
-    title: "Historic Castle in Scotland",
+    title: "Historic Castle",
     description:
       "Live like royalty in this historic castle in the Scottish Highlands. Explore the rugged beauty of the area.",
     image: {
@@ -228,7 +228,7 @@ const sampleListings = [
     country: "United Kingdom",
   },
   {
-    title: "Desert Oasis in Dubai",
+    title: "Desert Oasis",
     description:
       "Experience luxury in the middle of the desert in this opulent oasis in Dubai with a private pool.",
     image: {
@@ -240,7 +240,7 @@ const sampleListings = [
     country: "United Arab Emirates",
   },
   {
-    title: "Rustic Log Cabin in Montana",
+    title: "Rustic Log Cabin",
     description:
       "Unplug and unwind in this cozy log cabin surrounded by the natural beauty of Montana.",
     image: {
@@ -252,7 +252,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Beachfront Villa in Greece",
+    title: "Beachfront Villa",
     description:
       "Enjoy the crystal-clear waters of the Mediterranean in this beautiful beachfront villa on a Greek island.",
     image: {
@@ -276,7 +276,7 @@ const sampleListings = [
     country: "Costa Rica",
   },
   {
-    title: "Historic Cottage in Charleston",
+    title: "Historic Cottage",
     description:
       "Experience the charm of historic Charleston in this beautifully restored cottage with a private garden.",
     image: {
@@ -288,7 +288,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Modern Apartment in Tokyo",
+    title: "Modern Apartment",
     description:
       "Explore the vibrant city of Tokyo from this modern and centrally located apartment.",
     image: {
@@ -300,7 +300,7 @@ const sampleListings = [
     country: "Japan",
   },
   {
-    title: "Lakefront Cabin in New Hampshire",
+    title: "Lakefront Cabin",
     description:
       "Spend your days by the lake in this cozy cabin in the scenic White Mountains of New Hampshire.",
     image: {
@@ -312,7 +312,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Luxury Villa in the Maldives",
+    title: "Luxury Villa",
     description:
       "Indulge in luxury in this overwater villa in the Maldives with stunning views of the Indian Ocean.",
     image: {
@@ -324,7 +324,7 @@ const sampleListings = [
     country: "Maldives",
   },
   {
-    title: "Ski Chalet in Aspen",
+    title: "Ski Chalet",
     description:
       "Hit the slopes in style with this luxurious ski chalet in the world-famous Aspen ski resort.",
     image: {
@@ -336,7 +336,7 @@ const sampleListings = [
     country: "United States",
   },
   {
-    title: "Secluded Beach House in Costa Rica",
+    title: "Secluded Beach House",
     description:
       "Escape to a secluded beach house on the Pacific coast of Costa Rica. Surf, relax, and unwind.",
     image: {

@@ -10,8 +10,8 @@ const listingSchema=new Schema({
         filename: String,url: {
         type:String,
         //for undefined used ->default when intially data saved in db from developer side
-        default:"https://www.istockphoto.com/photos/beautiful-sunset",
-        set: (v)=> v==="" ? "https://www.istockphoto.com/photos/beautiful-sunset" :v,  //ternary operation
+      default: "https://images.unsplash.com/photo-1625505826533-5c80aca7d157?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
+            set: (v) => (!v || v === "") ? "https://images.unsplash.com/photo-1625505826533-5c80aca7d157?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" : v,  //ternary operation
     }
 },
     price: Number,
