@@ -5,7 +5,7 @@ body{
    min-height: 100vh;
    flex-direction: column;
 }
-.main-content{
+.container{
     flex:1;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 
 .f-info-socials i{
-        font-size: 1.2 rem;
+        font-size: 1.2rem;
         margin-right: 1rem;
 
 }
@@ -53,7 +53,7 @@ body{
 
     display: flex;
     flex-wrap: wrap;
-    align-items: space-evenly;
+    align-items: center;
     justify-content:center;
     height: 8rem;
     background-color: #ebebeb;

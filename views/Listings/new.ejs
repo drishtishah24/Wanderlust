@@ -1,45 +1,59 @@
-
 <% layout("layouts/boilerplate") %>
-<body>
-    <div class="row">
-        <div class="col-8 offset-2">
-            <br>
+
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <br>
                 <h3>Create a New Listing</h3>
 
-    <form method="POST" action="/Listings">
-        <div class="mb-3">
-            <lable for="title" class="form-label">Title</lable>
-        <input name="Listing[title]" placeholder="Add a catchy title" type="text" class="form-control">
-    </div>
-        
-        <div class="mb-3">
-            <lable for="description" class="form-label">Description</lable>
-        <textarea name="Listing[description]" placeholder="Add a detailed description" type="text" class="form-control"></textarea>
-    </div>
-        
-        <div class="mb-3"><lable for="image" class="form-label">Image</lable>
-        <input name="Listing[image]" placeholder="Enter image URL/link" type="text" class="form-control"></div>
-        
-        <div class="row">
-    <div class="mb-3 col-md-4">
-        <lable for="price" class="form-label">Price</lable>
-        <input name="Listing[price]" placeholder="1200" type="number" class="form-control">
-   
-    </div>
-    <div class="mb-3 col-md-8">
-            <lable for="country" class="form-label">Country</lable>
-             <input name="Listing[country]" placeholder="India" type="text" class="form-control">
-        </div> 
+                <form method="POST" action="/Listings" novalidate class="needs-validation">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input name="Listing[title]" placeholder="Add a catchy title" type="text" class="form-control" required>
+                        <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please enter a title!</div>
+                    </div>
+                   
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea name="Listing[description]" placeholder="Add a detailed description" type="text"
+                            class="form-control" required></textarea>
+                    <div class="invalid-feedback">Please enter a description!</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <lable for="image" class="form-label">Image</lable>
+                        <input name="Listing[image]" placeholder="Enter image URL/link" type="text"
+                            class="form-control">
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <lable for="price" class="form-label">Price</lable>
+                            <input name="Listing[price]" placeholder="1200"  class="form-control" required>
+                            <div class="invalid-feedback">Please enter valid price!</div>
+                        <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        
+
+                        <div class="mb-3 col-md-8">
+                            <lable for="country" class="form-label">Country</lable>
+                            <input name="Listing[country]" placeholder="India" type="text" class="form-control" required>
+                        <div class="invalid-feedback">Please enter a country!</div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="mb-3">
+                        <lable for="location" class="form-label">Location</lable>
+                        <input name="Listing[location]" placeholder="Jaipur,Rajasthan" type="text" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a location!</div>
+                    </div>
+
+
+                    <button class="btn btn-dark add-btn">Add Listing</button><br><br>
+                </form>
+            </div>
         </div>
-       
-        <div class="mb-3">
-            <lable for="location" class="form-label">Location</lable>
-            <input name="Listing[location]" placeholder="Jaipur,Rajasthan" type="text" class="form-control">
-        </div>
-        
-        
-        <button class="btn btn-dark add-btn">Add Listing</button><br><br>
-    </form>
-    </div>
-    </div>
-</body>
+    </body>
